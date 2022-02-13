@@ -1,3 +1,5 @@
+The repo for the backend can be found at: https://github.com/victoriaehrbar/productivity-tracker-backend
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
