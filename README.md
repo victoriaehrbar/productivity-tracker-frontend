@@ -1,4 +1,4 @@
-The repo for the backend can be found at: https://github.com/victoriaehrbar/productivity-tracker-backend
+The repo for the project's backend can be found at: https://github.com/victoriaehrbar/productivity-tracker-backend
 
 # Getting Started with Create React App
 
