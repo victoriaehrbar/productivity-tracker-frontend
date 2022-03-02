@@ -11,5 +11,11 @@ import App from './App';
 let store = createStore(reducer, applyMiddleware(thunk))
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
+    document.getElementById('root'));
 
