@@ -1,4 +1,4 @@
 
-export default function monthReducer(){
-    
+export default function monthReducer(state = {accounts: []} ) {
+
 }
