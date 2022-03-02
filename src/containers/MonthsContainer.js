@@ -1,6 +1,6 @@
 import React from 'react'
 
-class AccountsContainer extends React.Component {
+class MonthsContainer extends React.Component {
 
     render(){
         return(
@@ -11,3 +11,5 @@ class AccountsContainer extends React.Component {
         )
     }
 }
+
+export default MonthsContainer
