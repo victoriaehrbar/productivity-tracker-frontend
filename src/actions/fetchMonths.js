@@ -4,7 +4,7 @@ export function fetchMonths() {
       .then(resp => resp.json())
       .then(accounts => dispatch({
         type: 'FETCH_MONTHS',
-        
+        payload: months
       }))
     }
   }
