@@ -21,7 +21,7 @@ export default function accountReducer(state = {months: []}, action) {
             return month
           }
         })
-        return {...state, accounts: accountsTwo}
+        return {...state, months: monthsTwo}
       case 'EDIT_MONTH':
         let monthsThree = state.months.map(month => {
           if (month.id === action.payload.id) {
