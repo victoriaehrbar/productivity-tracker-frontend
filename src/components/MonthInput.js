@@ -33,4 +33,4 @@ class MonthInput extends React.Component {
     }
 }
 
-export default MonthInput
+export default connect(null, {addMonth})(MonthInput)
