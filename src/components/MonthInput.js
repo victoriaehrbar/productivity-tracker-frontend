@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addMonth} from '../actions/addMonth'
 
 class MonthInput extends React.Component {
 
