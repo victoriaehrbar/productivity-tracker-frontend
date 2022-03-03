@@ -17,4 +17,10 @@ class MonthsContainer extends React.Component {
     }
 }
 
-export default MonthsContainer
+const mapStateToProps = state => {
+    return {
+        months: state.months
+    }
+}
+
+export default connect()(MonthsContainer)
