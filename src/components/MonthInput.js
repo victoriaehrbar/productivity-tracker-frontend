@@ -10,3 +10,5 @@ class MonthInput extends React.Component {
         )
     }
 }
+
+export default MonthInput
