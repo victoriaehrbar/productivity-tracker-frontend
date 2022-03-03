@@ -1,4 +1,4 @@
-export default function accountReducer(state = {months: []}, action) {
+export default function monthReducer(state = {months: []}, action) {
     switch (action.type) {
       case 'FETCH_MONTHS':
         return {months: action.payload}
