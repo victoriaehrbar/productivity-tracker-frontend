@@ -15,7 +15,11 @@ class MonthInput extends React.Component {
     render(){
         return(
             <div>
-                MonthInput
+                <form onSubmit={this.handleSubmit}>
+                    <label>Month Name: </label>
+                    <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}/><br/>
+                    <input type="submit"/>
+                </form> 
             </div>
         )
     }
