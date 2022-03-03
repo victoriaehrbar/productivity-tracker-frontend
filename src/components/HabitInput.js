@@ -7,5 +7,5 @@ class HabitInput extends React.Component {
   state = {
     completed: '',
     date: '',
-    description ''
+    description: ''
   }
