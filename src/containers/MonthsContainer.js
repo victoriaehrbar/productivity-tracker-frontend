@@ -16,8 +16,11 @@ class MonthsContainer extends React.Component {
     render(){
         return(
             <div>
-                <MonthInput/>
-                <Months/>
+                <Switch>
+                    <Route path='/months/new' component={MonthInput}/>
+                    <Route path='/months/:id' render={(routerProps) => <Month {...routerProps} months={this.props.months}/>}/>
+                    <Route path='/months' render={(routerProps) => <Months {...routerProps} months={this.props.months}/>}/>
+                </Switch>
             </div>
 
         )
