@@ -6,6 +6,10 @@ import MonthInput from '../components/MonthInput'
 
 class MonthsContainer extends React.Component {
 
+    componentDidMount() {
+        this.props.fetchMonths()
+    }
+
     render(){
         return(
             <div>
