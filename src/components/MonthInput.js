@@ -12,6 +12,14 @@ class MonthInput extends React.Component {
         })
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.addMonth(this.state)
+        this.setState({
+          name: '',
+        })
+      }
+
     render(){
         return(
             <div>
