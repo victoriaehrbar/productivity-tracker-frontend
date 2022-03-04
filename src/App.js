@@ -1,18 +1,23 @@
-import React from 'react';
-import {connect} from 'react-redux'
-import MonthsContainer from './containers/MonthsContainer'
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import MonthInput from "./components/MonthInput";
+import Months from "./components/Months";
+import NavBar from "./components/NavBar";
 
-class App extends React.Component {
-  render() {
+function App() {
   return (
     <div className="App">
-      <MonthsContainer/>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/months" component={Months} />
+          <Route path="/months/new" component={MonthInput} />
+        </Switch>
+      </Router>
     </div>
   );
 }
 
-}
-
 export default App;
- 
