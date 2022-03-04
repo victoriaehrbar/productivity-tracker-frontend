@@ -16,9 +16,9 @@ let store = createStore(monthReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
     <Provider store={store}>
-      <Router>
+      
         <App />
-      </Router>
+      
     </Provider>,
     document.getElementById('root'));
 
