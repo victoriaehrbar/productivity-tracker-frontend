@@ -16,7 +16,7 @@ const Month = (props) => {
       <h2>
         {month ? month.name : null}
       </h2>
-      <TransactionsContainer month={month}/><br/>
+      <HabitsContainer month={month}/><br/>
       <h4>Edit Month</h4>
       <MonthEdit month={month}/>
     </div>

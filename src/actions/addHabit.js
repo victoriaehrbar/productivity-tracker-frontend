@@ -6,7 +6,7 @@ export const addHabit = (habit, monthId) => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(transaction)
+        body: JSON.stringify(habit)
       })
       .then(response => response.json())
       .then(month => {

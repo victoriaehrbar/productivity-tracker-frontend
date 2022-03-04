@@ -4,6 +4,6 @@ export const deleteHabit = (habitId, monthId) => {
         method: 'DELETE'
       })
       .then(response => response.json())
-      .then(account => dispatch({type: 'DELETE_HABIT', payload: month}))
+      .then(month => dispatch({type: 'DELETE_HABIT', payload: month}))
     }
   }
