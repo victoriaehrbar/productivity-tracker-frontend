@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import MonthInput from "./components/MonthInput";
 import Months from "./components/Months";
@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Switch>
+        <Routes>
           <Route exact path="/" component={Home} />
           <Route exact path="/months" component={Months} />
           <Route path="/months/new" component={MonthInput} />
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );

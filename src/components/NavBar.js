@@ -1,15 +1,20 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const NavBar = (props) => {
-
+export default function NavBar() {
   return (
     <div>
-      <Link to='/months' style={{paddingRight: '10px'}}>Months  </Link>
-      <Link to='/months/new'> Add Month</Link>
+      <ul>
+        <li>
+          <Link to="/">Home </Link>
+        </li>
+        <li>
+          <Link to="/months"> Months</Link>
+        </li>
+        <li>
+          <Link to="/months/new"> Create a Month</Link>
+        </li>
+      </ul>
     </div>
-
-  )
+  );
 }
-
-export default NavBar
