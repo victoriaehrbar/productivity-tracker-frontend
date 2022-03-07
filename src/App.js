@@ -11,9 +11,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/months" component={Months} />
-          <Route path="/months/new" component={MonthInput} />
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/months" element={<Months/>} />
+          <Route path="/months/new" element={<MonthInput/>} />
         </Routes>
       </Router>
     </div>

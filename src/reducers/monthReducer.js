@@ -1,6 +1,7 @@
-export default function monthReducer(state = {months: []}, action) {
+function monthReducer(state = {months: []}, action) {
     switch (action.type) {
       case 'FETCH_MONTHS':
+        debugger
         return {months: action.payload}
       case 'ADD_MONTH':
         return {...state, months: [...state.months, action.payload]}
@@ -35,3 +36,5 @@ export default function monthReducer(state = {months: []}, action) {
         return state
     }
   }
+
+  export default monthReducer

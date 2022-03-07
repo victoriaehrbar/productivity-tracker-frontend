@@ -11,7 +11,7 @@ import App from './App';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-let store = createStore(monthReducer, applyMiddleware(thunk))
+let store = createStore(monthReducer, composeEnhancers(applyMiddleware(thunk)));
 
 
 ReactDOM.render(
